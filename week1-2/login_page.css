@@ -1,0 +1,138 @@
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px 10px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+}
+p{
+  margin: 0;
+  padding: 0;
+}
+
+.login-container {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 330px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+.logo-container {
+  justify-content: flex-start;
+}
+.logo {
+  width: 170px;
+  height: auto;
+  max-height: 80px;
+  object-fit: contain;
+}
+.input_box {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.input_label {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.input_text {
+  padding: 8px 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  background: #f9f9f9;
+}
+
+.form-options {
+  justify-content: space-between;
+}
+
+.input_box .input_text:focus {
+  outline: none;
+  border-color: #ff6b6b;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(255, 107, 107, 0.1);
+}
+.login-btn {
+  background: red;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.divider {
+  gap: 15px;
+}
+
+.horizontal-line {
+  flex: 1;
+  border: none;
+  height: 1px;
+  background: #ddd;
+}
+
+.divider-text {
+  color: #999;
+  font-size: 14px;
+}
+.social_login {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.social-btn {
+  justify-content: center;
+  gap: 12px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: white;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.social-btn.apple {
+  background: #000;
+  color: white;
+}
+
+.social-btn.microsoft {
+  background: #666;
+  color: white;
+}
+
+.social-icon {
+  height: 18px;
+  width: 18px;
+}
+.extra_links {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
