@@ -24,7 +24,7 @@ p{
 }
 
 .login-container {
-  background: white;
+  background-color: white;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -44,17 +44,17 @@ p{
   max-height: 80px;
   object-fit: contain;
 }
-.input_box {
+.input-box {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
-.input_label {
+.input-label {
   font-size: 14px;
   font-weight: 500;
 }
 
-.input_text {
+.input-text {
   padding: 8px 16px;
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -67,7 +67,7 @@ p{
   justify-content: space-between;
 }
 
-.input_box .input_text:focus {
+.input-box .input-text:focus {
   outline: none;
   border-color: #ff6b6b;
   background: white;
@@ -99,7 +99,7 @@ p{
   color: #999;
   font-size: 14px;
 }
-.social_login {
+.social-login {
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -130,7 +130,7 @@ p{
   height: 18px;
   width: 18px;
 }
-.extra_links {
+.extra-links {
   text-align: center;
   display: flex;
   flex-direction: column;
