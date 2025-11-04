@@ -1,16 +1,20 @@
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: sans-serif;
   margin: 0;
   padding: 10px;
   gap: 10px;
   overflow: auto;
-  height: calc(100vh - 20px);
-  width: calc(100vw - 20px);
+  height: 100dvh;
+  /*width: 100dvw;*/
   display: flex;
   flex-direction: column;
 }
 header, footer {
-  height: 100px;
+  max-height: 150px;
+  flex: 1;
   border-radius: 6px;
   padding: 10px;
 }
@@ -22,11 +26,11 @@ footer{
 }
 .main-container{
   display: flex;
-  justify-content: left;
-  overflow: auto;
+  flex: 1;
+  overflow: hidden;
   gap: 10px;
 }
-aside, .main-content, .related {
+aside, .main-content, .tile {
   border-radius: 6px;
   padding: 10px;
   flex: 1;
@@ -34,9 +38,10 @@ aside, .main-content, .related {
 aside{
   background: lightgreen;
   overflow: auto;
+  max-width: 250px;
 }
 .content-holder{
-  flex: 4;
+  flex: 1;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -44,11 +49,11 @@ aside{
 .main-content{
   background: aqua;
 }
-.related-content{
+.sub-content{
   display: flex;
   gap: 10px;
   flex: 1;
 }
-.related{
+.tile{
   background : dodgerblue;
 }
